@@ -1,8 +1,8 @@
-#Social Media Video Downloader App v1.1
+Social Media Video Downloader App v1.1
 
 This is a (Python) Flask-based Downloader application that allows you to download social media videos or extract audio from them using yt-dlp.
 
-#Installation
+Installation
 ------------
 1. Ensure you have Python 3.7 or higher installed on your system.
 2. Clone or download the project files.
@@ -16,7 +16,7 @@ This is a (Python) Flask-based Downloader application that allows you to downloa
 4. Install the dependencies using pip:
        pip install -r requirements.txt
 
-#Usage
+Usage
 -----
 1. Run the Flask application:
        python run.py
