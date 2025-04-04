@@ -1,6 +1,7 @@
 # Social Media Video Downloader App v1.1
 
 This is a (Python) Flask-based Downloader application that allows you to download social media videos or extract audio from them using yt-dlp.
+This app was vibe-coded with Claude 3.7 Sonnet, ChatGPT o3-mini-high and Google Gemini 2.5 experimental.
 
 ## Installation
 ------------
