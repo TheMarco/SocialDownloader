@@ -1,0 +1,181 @@
+body {
+    padding-top: 20px;
+    background-color: #121212;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.container {
+    max-width: 800px;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    margin: 20px auto; /* Added margin */
+}
+h1 {
+    color: #ff0000; /* YouTube Red */
+    font-weight: 300;
+}
+.header-icon {
+    height: 25px;
+    vertical-align: -0.25em;
+    margin-right: 5px;
+    position: relative;
+    bottom: 10px;
+    /* Consider removing filter if favicons look okay */
+    /* filter: grayscale(50%); */
+}
+.note {
+    background-color: #333333;
+    border-left: 4px solid #ff0000; /* YouTube Red */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+.loading .spinner-border { /* Style the spinner in the loading div */
+    width: 3rem;
+    height: 3rem;
+    color: #ff0000; /* YouTube Red */
+}
+.error-message { /* Already using alert-danger, this adds specifics */
+    color: #dc3545;
+    margin-top: 15px;
+    font-weight: bold;
+    background-color: rgba(220, 53, 69, 0.1);
+    border-left: 4px solid #dc3545;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+.video-info {
+    margin-top: 20px;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+}
+.thumbnail {
+    width: 100%;
+    max-height: 250px; /* Limit thumbnail height */
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #444;
+    margin-bottom: 1rem; /* Space below thumbnail on small screens */
+}
+.format-row {
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    transition: background-color 0.2s ease, transform 0.15s ease-out;
+}
+.format-row:hover {
+    background-color: #4a4a4a;
+    transform: scale(1.01); /* Subtle grow effect */
+}
+.format-row small { /* Make the type label (Video/Audio) lighter */
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+.download-status-section {
+    margin-top: 20px;
+}
+.download-complete {
+    margin-top: 20px;
+}
+.btn {
+    border-radius: 5px;
+    transition: all 0.2s ease; /* Smooth transitions for all buttons */
+}
+.btn i { /* Space between icon and text */
+    margin-right: 0.4em;
+}
+.btn-primary {
+    background-color: #ff0000; /* YouTube Red */
+    border-color: #ff0000;
+}
+.btn-primary:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+}
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+    filter: brightness(1.1); /* Slightly brighten on hover */
+}
+.progress { /* Applied to #progress-container */
+    height: 25px !important; /* Ensure height is applied */
+    background-color: #444;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress-bar { /* Applied to #progress-bar */
+    min-width: 3.5rem; /* Ensure text is visible even at 0% */
+    background-color: #28a745; /* Green */
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+    transition: width 0.3s ease-out;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem; /* Slightly smaller text in progress bar */
+}
+#fetch-btn .spinner-border-sm { /* Style spinner inside fetch button */
+    margin-right: 0.5em;
+    vertical-align: -0.125em;
+}
+.form-control {
+    background-color: #2c2c2c;
+    color: #fff;
+    border-color: #444;
+}
+.form-control:focus {
+    background-color: #3a3a3a;
+    color: #fff;
+    border-color: #ff0000; /* YouTube Red focus */
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25); /* Red glow */
+}
+/* --- Placeholder Text Color --- */
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 1; /* Override Bootstrap's default */
+}
+.form-control:-ms-input-placeholder { /* IE/Edge */
+    color: rgba(255, 255, 255, 0.5);
+}
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(255, 255, 255, 0.5);
+}
+/* --- End Placeholder CSS --- */
+
+/* Link color within small tags */
+small a {
+    color: #ff0000 !important; /* YouTube Red */
+    text-decoration: none;
+}
+small a:hover {
+    text-decoration: underline;
+}
+hr {
+    border-color: rgba(255, 255, 255, 0.15) !important; /* Lighter hr */
+}
+/* Style the download status alert */
+.alert-secondary {
+    background-color: #2c2c2c !important;
+    border-color: #444 !important;
+    color: #fff !important;
+}
+/* Make text within the status alert slightly dimmer */
+.alert-secondary .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Ensure FontAwesome icons render correctly */
+.fas {
+    line-height: inherit; /* Prevent vertical alignment issues */
+}
