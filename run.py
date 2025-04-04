@@ -18,6 +18,6 @@ if __name__ == '__main__':
     # For production, consider a WSGI server like Gunicorn or Waitress.
     # Example using Waitress (if installed: pip install waitress):
     # from waitress import serve
-    # serve(app, host='0.0.0.0', port=8080)
+    # serve(app, host='0.0.0.0', port=8000)
 
     app.run(host='0.0.0.0', port=8000, debug=False, threaded=True)
